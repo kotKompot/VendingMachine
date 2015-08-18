@@ -32,19 +32,19 @@ namespace VendingMachine.src
             Console.WriteLine((i++) + ": " + "Вернуть сдачу");
             Console.WriteLine("0" + ": " + "Выйти из программы");
 
-            Console.WriteLine("\n\n\n\n\n");
+            Console.WriteLine("\n");
             Console.WriteLine("Симулировать добавление монетки \n");
 
             Console.WriteLine("5: 1 рубль \n" + 
                               "6: 2 рубля \n" +
                               "7: 5 рублей \n" +
-                              "8: 10 рублей \n\n");
+                              "8: 10 рублей \n");
 
             Console.WriteLine("Осталось мелочи в автомате: \n"
-                             +"монета 1 рубль: " + moneyHolder.coinsBox.oneRubleCoinsCount + "\n" 
-                             +"монета 2 рубля: " + moneyHolder.coinsBox.twoRubleCoinsCount + "\n" 
-                             +"монета 5 рублей: " + moneyHolder.coinsBox.fiveRubleCoinsCount + "\n" 
-                             +"монета 10 рублей: " + moneyHolder.coinsBox.tenRubleCoinsCount + "\n");
+                             +"монета 1 рубль: " + moneyHolder._coinsBox.oneRubleCoinsCount + "\n" 
+                             +"монета 2 рубля: " + moneyHolder._coinsBox.twoRubleCoinsCount + "\n" 
+                             +"монета 5 рублей: " + moneyHolder._coinsBox.fiveRubleCoinsCount + "\n" 
+                             +"монета 10 рублей: " + moneyHolder._coinsBox.tenRubleCoinsCount + "\n");
         }
 
         public int readInput()

@@ -10,7 +10,7 @@ namespace VendingMachine.src
 
     class MoneyHolder
     {
-        public CoinsBox coinsBox;
+        public CoinsBox _coinsBox;
         private  int _deposit;
         public int deposit
         {
@@ -21,20 +21,20 @@ namespace VendingMachine.src
         public MoneyHolder(int deposit, CoinsBox coinsBox)
         {
             this.deposit = deposit;
-            this.coinsBox = coinsBox;
+            this._coinsBox = coinsBox;
         }
 
         public void addCoin(Coins coin)
         {
             switch(coin)
             {
-                case Coins.one: { coinsBox.addOneRubleCoin(); }
+                case Coins.one: { _coinsBox.addOneRubleCoin(); }
                     break;
-                case Coins.two: { coinsBox.addTwoRubleCoin(); }
+                case Coins.two: { _coinsBox.addTwoRubleCoin(); }
                     break;
-                case Coins.five: { coinsBox.addFiveRubleCoin(); }
+                case Coins.five: { _coinsBox.addFiveRubleCoin(); }
                     break;
-                case Coins.ten: { coinsBox.addTenRubleCoin(); }
+                case Coins.ten: { _coinsBox.addTenRubleCoin(); }
                     break;
 
             }
@@ -51,6 +51,7 @@ namespace VendingMachine.src
 
         public bool giveResidue()
         {
+            CoinsBox coinsBox = new CoinsBox(_coinsBox.oneRubleCoinsCount, _coinsBox.twoRubleCoinsCount, _coinsBox.fiveRubleCoinsCount, _coinsBox.tenRubleCoinsCount);
             int tryDeposit = deposit;
             int i10;
             i10 = tryDeposit / 10;
@@ -115,7 +116,7 @@ namespace VendingMachine.src
             }
 
             if (tryDeposit != 0) { return false; }
-
+            _coinsBox = coinsBox;
             deposit = tryDeposit;
             return true;
         }

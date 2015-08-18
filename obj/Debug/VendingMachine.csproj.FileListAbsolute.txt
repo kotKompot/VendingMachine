@@ -4,3 +4,9 @@ c:\users\maksk\documents\visual studio 2013\Projects\VendingMachine\VendingMachi
 c:\users\maksk\documents\visual studio 2013\Projects\VendingMachine\VendingMachine\bin\Debug\VendingMachine.pdb
 c:\users\maksk\documents\visual studio 2013\Projects\VendingMachine\VendingMachine\obj\Debug\VendingMachine.exe
 c:\users\maksk\documents\visual studio 2013\Projects\VendingMachine\VendingMachine\obj\Debug\VendingMachine.pdb
+D:\VendingMachine\VendingMachine\bin\Debug\VendingMachine.exe.config
+D:\VendingMachine\VendingMachine\obj\Debug\VendingMachine.exe
+D:\VendingMachine\VendingMachine\obj\Debug\VendingMachine.pdb
+D:\VendingMachine\VendingMachine\bin\Debug\VendingMachine.exe
+D:\VendingMachine\VendingMachine\bin\Debug\VendingMachine.pdb
+D:\VendingMachine\VendingMachine\obj\Debug\VendingMachine.csprojResolveAssemblyReference.cache
